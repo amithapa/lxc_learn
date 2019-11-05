@@ -14,10 +14,16 @@ sudo apt-get install \
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 
-# Docker setup
+# Docker Repository
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable" -y
 
-#Documentation: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+sudo apt-get update
+
+# Installing
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# Reference
+# Documentation: https://docs.docker.com/install/linux/docker-ce/ubuntu/
