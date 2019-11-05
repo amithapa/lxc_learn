@@ -23,7 +23,7 @@ sudo add-apt-repository \
 sudo apt-get update
 
 # Installing
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 # Reference
 # Documentation: https://docs.docker.com/install/linux/docker-ce/ubuntu/
